@@ -1,0 +1,2960 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>مؤسسة رمضان للتنمية الاقتصادية — Ramadan Economic Development Foundation</title>
+  <meta name="description" content="مؤسسة رمضان للتنمية الاقتصادية - تمكين اقتصادي… كرامة إنسانية… وتنمية تصنع المستقبل. مشهرة بوزارة التضامن الاجتماعي برقم 12307 لسنة 2025.">
+
+  <!-- Google Fonts: Tajawal (Arabic) & Montserrat (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Brand Color System */
+      --green-primary: #129643;
+      --green-dark: #084D23;
+      --green-deep: #052F15;
+      --green-light: #22B24C;
+      --green-leaf: #76C043;
+      --green-glow: rgba(18, 150, 67, 0.35);
+      /* Brand Color System — Bright, Hopeful & Airy Palette */
+      --green-primary: #149A46;
+      --green-dark: #0E6B31;
+      --green-deep: #0B4A23;
+      --green-light: #24B854;
+      --green-leaf: #6AD153;
+      --green-mint: #B8F7CB;
+      --green-glow: rgba(20, 154, 70, 0.28);
+
+      --blue-primary: #007CA8;
+      --blue-dark: #004D6A;
+      --blue-deep: #002C3D;
+      --blue-dark: #00587A;
+      --blue-deep: #00394F;
+      --blue-light: #0299D6;
+      --blue-cyan: #00A3E0;
+      --blue-glow: rgba(0, 124, 168, 0.35);
+      --blue-glow: rgba(0, 124, 168, 0.28);
+
+      --gold: #C49A36;
+      --gold-light: #DFB757;
+      --gold: #D4A63B;
+      --gold-light: #ECC565;
+
+      --paper: #F6F8F5;
+      --paper: #FAF8F2;
+      --sheet: #FFFFFF;
+      --ink: #0D1C14;
+      --muted: #53695D;
+      --rule: rgba(255, 255, 255, 0.15);
+      --ink: #15281D;
+      --muted: #4C6356;
+      --rule: rgba(255, 255, 255, 0.35);
+
+      --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+      --ease-3d: cubic-bezier(0.25, 1, 0.5, 1);
+
+      --font-ar: "Tajawal", system-ui, -apple-system, sans-serif;
+      --font-en: "Montserrat", system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Font Enforcement */
+    html[lang="ar"],
+    html[lang="ar"] body,
+    html[lang="ar"] button,
+    html[lang="ar"] input,
+    html[lang="ar"] select,
+    html[lang="ar"] textarea {
+      font-family: var(--font-ar) !important;
+    }
+
+    html[lang="en"],
+    html[lang="en"] body,
+    html[lang="en"] button,
+    html[lang="en"] input,
+    html[lang="en"] select,
+    html[lang="en"] textarea {
+      font-family: var(--font-en) !important;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: var(--green-deep);
+      color: #FFFFFF;
+      background-color: var(--paper);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Unified Header & Navbar in a Single Clean Row */
+    /* Unified Header & Navbar — Transparent over hero, frosted warm light on scroll */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 68px;
+      padding: 0 clamp(16px, 2.8vw, 38px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #FFFFFF;
+      z-index: 60;
+      background: rgba(3, 14, 8, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: none;
+      box-sizing: border-box;
+      white-space: nowrap;
+      transition: background 0.3s var(--ease), backdrop-filter 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), color 0.3s var(--ease);
+    }
+
+    .top-bar.scrolled {
+      background: rgba(250, 248, 242, 0.90);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(20, 154, 70, 0.14);
+      box-shadow: 0 4px 20px rgba(21, 40, 29, 0.08);
+      color: var(--ink);
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .brand-logo-img {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.28));
+      transition: filter 0.3s var(--ease);
+    }
+
+    .top-bar.scrolled .brand-logo-img {
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12));
+    }
+
+    .brand-text-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    /* Foundation name: ~18px, balanced font weight */
+    .brand-name {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.2;
+      color: #FFFFFF;
+      letter-spacing: -0.01em;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.38);
+      white-space: nowrap;
+      transition: color 0.3s var(--ease), text-shadow 0.3s var(--ease);
+    }
+
+    .top-bar.scrolled .brand-name {
+      color: var(--ink);
+      text-shadow: none;
+    }
+
+    /* Tagline: ~12px, font-weight: 500 */
+    .brand-tagline {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--green-leaf);
+      color: var(--green-mint);
+      text-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      transition: color 0.3s var(--ease), text-shadow 0.3s var(--ease);
+    }
+
+    .top-bar.scrolled .brand-tagline {
+      color: var(--green-primary);
+      text-shadow: none;
+    }
+
+    /* Reg badge: ~12px, font-weight: 500 */
+    .reg-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 1px 7px;
+      background: rgba(118, 192, 67, 0.15);
+      border: 1px solid rgba(118, 192, 67, 0.35);
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 4px;
+      font-size: 12px;
+      color: #FFFFFF;
+      font-weight: 500;
+      white-space: nowrap;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s var(--ease);
+    }
+
+    .top-bar.scrolled .reg-badge {
+      background: rgba(20, 154, 70, 0.10);
+      border-color: rgba(20, 154, 70, 0.28);
+      color: var(--green-dark);
+      text-shadow: none;
+    }
+
+    /* Top Bar End Flex Group */
+    .top-bar-end {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .top-bar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    /* Unified Nav Bar */
+    .top-bar-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* Initiative 01/12 Badge: ~12px, font-weight: 500 */
+    .page-counter-badge {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 4px 10px;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 16px;
+      color: #FFFFFF;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-inline-end: 4px;
+      white-space: nowrap;
+      transition: all 0.3s var(--ease);
+    }
+
+    .page-counter-badge span {
+      color: var(--green-leaf);
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .page-counter-badge #counter-current {
+      color: var(--green-mint);
+      font-weight: 700;
+    }
+
+    .top-bar.scrolled .page-counter-badge {
+      background: rgba(20, 154, 70, 0.10);
+      border-color: rgba(20, 154, 70, 0.24);
+      color: var(--ink);
+      text-shadow: none;
+    }
+
+    .top-bar.scrolled .page-counter-badge span {
+      color: var(--ink);
+    }
+
+    .top-bar.scrolled .page-counter-badge #counter-current {
+      color: var(--green-primary);
+    }
+
+    /* Nav Links: ~14px (0.875rem), font-weight: 500, no cards, turns blue on hover */
+    .nav-tab-link {
+      background: transparent !important;
+      border: none !important;
+      outline: none;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      padding: 6px 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.88);
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.34);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      transition: color 0.22s var(--ease), transform 0.2s var(--ease);
+      transition: color 0.22s var(--ease), transform 0.2s var(--ease), text-shadow 0.3s var(--ease);
+      position: relative;
+    }
+
+    .top-bar.scrolled .nav-tab-link {
+      color: var(--ink);
+      text-shadow: none;
+    }
+
+    .nav-tab-link::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 10px;
+      right: 10px;
+      height: 2px;
+      background: var(--blue-light);
+      background: #7DD3FC;
+      border-radius: 2px;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.25s var(--ease);
+      transition: transform 0.25s var(--ease), background 0.25s var(--ease);
+    }
+
+    .top-bar.scrolled .nav-tab-link::after {
+      background: var(--blue-primary);
+    }
+
+    .nav-tab-link:hover,
+    .nav-tab-link:focus-visible {
+      color: var(--blue-light) !important;
+      color: #7DD3FC !important;
+    }
+
+    .top-bar.scrolled .nav-tab-link:hover,
+    .top-bar.scrolled .nav-tab-link:focus-visible {
+      color: var(--blue-primary) !important;
+    }
+
+    .nav-tab-link:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-tab-link.active {
+      color: var(--blue-light) !important;
+      color: #7DD3FC !important;
+      font-weight: 500;
+    }
+
+    .top-bar.scrolled .nav-tab-link.active {
+      color: var(--blue-primary) !important;
+    }
+
+    .nav-tab-link.active::after {
+      transform: scaleX(1);
+    }
+
+    .fb-tab-link {
+      color: rgba(255, 255, 255, 0.88);
+      color: rgba(255, 255, 255, 0.95);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .top-bar.scrolled .fb-tab-link {
+      color: var(--ink);
+    }
+
+    .fb-tab-link svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+      transition: transform 0.2s ease, fill 0.22s ease;
+    }
+
+    .fb-tab-link:hover svg {
+      transform: scale(1.1);
+      fill: var(--blue-light);
+      fill: #7DD3FC;
+    }
+
+    .top-bar.scrolled .fb-tab-link:hover svg {
+      fill: var(--blue-primary);
+    }
+
+    /* Language Switcher Button */
+    .lang-switch-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      border-radius: 18px;
+      padding: 4px 12px;
+      color: #FFFFFF;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s var(--ease);
+      margin-inline-start: 4px;
+      white-space: nowrap;
+    }
+
+    .top-bar.scrolled .lang-switch-btn {
+      background: rgba(20, 154, 70, 0.10);
+      border-color: rgba(20, 154, 70, 0.28);
+      color: var(--ink);
+      text-shadow: none;
+    }
+
+    .lang-switch-btn svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+      transition: transform 0.3s ease;
+    }
+
+    .lang-switch-btn:hover {
+      background: rgba(2, 153, 214, 0.15);
+      border-color: var(--blue-light);
+      color: var(--blue-light);
+      box-shadow: 0 0 14px rgba(2, 153, 214, 0.35);
+      background: rgba(255, 255, 255, 0.28);
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+    }
+
+    .top-bar.scrolled .lang-switch-btn:hover {
+      background: rgba(0, 124, 168, 0.12);
+      border-color: var(--blue-primary);
+      color: var(--blue-primary);
+      box-shadow: none;
+    }
+
+    .lang-switch-btn:hover svg {
+      transform: rotate(20deg);
+    }
+
+    /* Mobile Hamburger Menu Toggle Button */
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 6px;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 65;
+      transition: all 0.25s var(--ease);
+    }
+
+    .top-bar.scrolled .mobile-menu-btn {
+      background: rgba(20, 154, 70, 0.10);
+      border-color: rgba(20, 154, 70, 0.24);
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #FFFFFF;
+      border-radius: 2px;
+      transition: all 0.25s ease;
+    }
+
+    .top-bar.scrolled .mobile-menu-btn span {
+      background: var(--ink);
+    }
+
+    /* 3D Cinematic Showcase Stage (Full-Screen Viewport) */
+    .stage-viewport {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      perspective: 1400px;
+      perspective-origin: 50% 50%;
+      z-index: 10;
+    }
+
+    /* 3D Page Track Container */
+    .pages-track {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+
+    /* Each Website Page as a Full-Screen Environment (100vw × 100vh with Natural Vertical Scroll) */
+    .page-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-y: auto; /* Natural vertical scrolling from top to footer */
+      overflow-x: hidden;
+      touch-action: pan-y;
+      -webkit-overflow-scrolling: touch;
+      box-sizing: border-box;
+      transform-style: preserve-3d;
+      will-change: transform, opacity;
+      transition: opacity 0.45s var(--ease);
+      scrollbar-width: thin;
+      scrollbar-color: var(--page-accent, #129643) rgba(0, 0, 0, 0.45);
+      scrollbar-color: var(--page-accent, #149A46) rgba(255, 255, 255, 0.25);
+    }
+
+    /* Custom Up and Down Slider (Vertical Scrollbar) Themed to Match Every Page Style */
+    .page-slide::-webkit-scrollbar,
+    .fullpage-view::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .page-slide::-webkit-scrollbar-track,
+    .fullpage-view::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.42);
+      background: rgba(255, 255, 255, 0.22);
+      border-radius: 10px;
+      margin: 82px 4px 10px 4px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .page-slide::-webkit-scrollbar-thumb,
+    .fullpage-view::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, var(--page-accent-light, #22B24C), var(--page-accent, #129643));
+      background: linear-gradient(180deg, var(--page-accent-light, #24B854), var(--page-accent, #149A46));
+      border-radius: 10px;
+      border: 1.5px solid rgba(255, 255, 255, 0.32);
+      box-shadow: 0 0 14px var(--page-glow, rgba(18, 150, 67, 0.55));
+      border: 1.5px solid rgba(255, 255, 255, 0.55);
+      box-shadow: 0 0 12px var(--page-glow, rgba(20, 154, 70, 0.35));
+      min-height: 52px;
+      transition: all 0.25s var(--ease);
+    }
+
+    .page-slide::-webkit-scrollbar-thumb:hover,
+    .fullpage-view::-webkit-scrollbar-thumb:hover {
+      background: var(--page-accent-light, #22B24C);
+      background: var(--page-accent-light, #24B854);
+      border-color: #FFFFFF;
+      box-shadow: 0 0 22px var(--page-glow, rgba(18, 150, 67, 0.85));
+      box-shadow: 0 0 18px var(--page-glow, rgba(20, 154, 70, 0.55));
+    }
+
+    body.is-dragging {
+      user-select: none !important;
+      cursor: grabbing !important;
+    }
+    body.is-dragging * {
+      user-select: none !important;
+      cursor: grabbing !important;
+    }
+
+    /* Blurred Photo Background Layer Covering Full Page till Footer */
+    /* Blurred Photo Background Layer Covering Full Page from Top: 0 till Footer */
+    .page-bg-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page-bg-photo {
+      position: absolute;
+      top: -24px;
+      left: -24px;
+      right: -24px;
+      bottom: -24px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: blur(12px) brightness(0.68) saturate(1.15);
+      filter: blur(10px) brightness(0.92) saturate(1.12);
+      transform: scale(1.06);
+      will-change: transform;
+    }
+
+    .page-bg-photo-overlay {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(6, 18, 12, 0.46) 0%, rgba(4, 14, 9, 0.62) 50%, rgba(2, 8, 5, 0.88) 100%);
+      background: linear-gradient(180deg, rgba(16, 36, 24, 0.24) 0%, rgba(18, 38, 26, 0.34) 55%, rgba(250, 248, 242, 0.28) 100%);
+    }
+
+    /* Content Wrapper extending to footer */
+    .page-content-wrapper {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    /* Full-Screen Centered Hero Presentation */
+    /* Full-Screen Centered Hero Presentation (starts behind navbar with top padding equal to navbar + spacing) */
+    .page-hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      padding: 105px 24px 45px 24px;
+      padding: 96px 24px 45px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    /* Sensible container max-width ~1200px, margin: 0 auto, centered */
+    .hero-center-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 18px;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+
+    /* Hero Text Centered in BOTH Arabic & English */
+    .hero-center-container,
+    .hero-titles-wrap,
+    .hero-synopsis-text,
+    .pillar-card {
+      text-align: center !important;
+    }
+
+    /* Footer and Full-Page views preserve directional alignment */
+    html[lang="ar"] .footer-col,
+    html[lang="ar"] .fullpage-hero {
+      text-align: right;
+    }
+
+    html[lang="en"] .footer-col,
+    html[lang="en"] .fullpage-hero {
+      text-align: left;
+    }
+
+    /* Initiative Emblem Badge Centered */
+    /* Initiative Emblem Badge Centered — Bright Light Frosted Surface */
+    .hero-emblem-badge {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.88) !important;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1.5px solid;
+      border: 1.5px solid rgba(255, 255, 255, 0.96) !important;
+      box-shadow: 0 10px 28px rgba(13, 38, 22, 0.16) !important;
+      margin: 0 auto;
+      transition: transform 0.35s var(--ease);
+    }
+
+    .hero-emblem-badge:hover {
+      transform: scale(1.06) rotate(3deg);
+    }
+
+    .hero-emblem-badge svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    /* Meta Badges Row: Flex row with justify-content: center */
+    .meta-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .badge-item {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.20);
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #FFFFFF;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+      backdrop-filter: blur(8px);
+    }
+
+    .badge-item.highlight {
+      background: rgba(18, 150, 67, 0.22);
+      border-color: var(--green-leaf);
+      background: rgba(36, 184, 84, 0.36);
+      border-color: rgba(184, 247, 203, 0.72);
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .badge-year {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gold-light);
+      background: rgba(196, 154, 54, 0.15);
+      border: 1px solid rgba(196, 154, 54, 0.35);
+      color: #FFF4CC;
+      background: rgba(212, 166, 59, 0.32);
+      border: 1px solid rgba(236, 197, 101, 0.65);
+      padding: 3px 12px;
+      border-radius: 20px;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Main Titles Centered */
+    .hero-titles-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 6px;
+      width: 100%;
+    }
+
+    .hero-main-title {
+      font-size: clamp(28px, 3.8vw, 48px);
+      font-weight: 800;
+      line-height: 1.2;
+      color: #FFFFFF;
+      letter-spacing: -0.015em;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      text-shadow: 0 3px 16px rgba(0, 0, 0, 0.36);
+      text-align: center;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .hero-en-title {
+      font-size: clamp(14px, 1.35vw, 17.5px);
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.76);
+      color: rgba(255, 255, 255, 0.92);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      letter-spacing: 0.02em;
+      text-align: center;
+    }
+
+    .hero-rule-divider {
+      width: 64px;
+      height: 3.5px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--green-leaf), var(--blue-cyan));
+      background: linear-gradient(90deg, var(--green-mint), var(--gold-light));
+      margin: 8px auto 0 auto;
+    }
+
+    /* Description paragraph: max-width ~800px, centered */
+    .hero-synopsis-text {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: clamp(14.5px, 1.2vw, 17px);
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.96);
+      font-weight: 400;
+      text-align: center;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Strategic Pillar cards in an equal-column grid, centered, identical widths & gaps */
+    .highlights-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      width: 100%;
+      max-width: 1020px;
+      margin: 4px auto 0 auto;
+    }
+
+    @media (max-width: 860px) {
+      .highlights-row {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+      }
+    }
+
+    .pillar-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.20);
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      border-radius: 14px;
+      padding: 16px 18px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s var(--ease);
+    }
+
+    .pillar-card:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(255, 255, 255, 0.28);
+      background: rgba(255, 255, 255, 0.28);
+      border-color: rgba(255, 255, 255, 0.58);
+      transform: translateY(-2px);
+    }
+
+    .pillar-icon-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--green-leaf);
+      color: var(--green-mint);
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+    }
+
+    .pillar-desc-text {
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.88);
+      color: #FFFFFF;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+      text-align: center;
+    }
+
+    /* Action CTAs Centered */
+    .hero-actions-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .action-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      height: 48px;
+      padding: 0 26px;
+      border-radius: 24px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14.5px;
+      transition: all 0.28s var(--ease);
+    }
+
+    .action-cta-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      filter: brightness(1.15);
+      filter: brightness(1.1);
+    }
+
+    .action-cta-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .action-secondary-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      height: 48px;
+      padding: 0 22px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.20);
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      color: #FFFFFF;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+      transition: all 0.25s var(--ease);
+    }
+
+    .action-secondary-btn:hover {
+      background: rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.32);
+      border-color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    /* Scroll Down Hint */
+    .scroll-down-hint {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 14px;
+      opacity: 0.82;
+      opacity: 0.92;
+      animation: hintFloat 2.4s ease-in-out infinite;
+    }
+
+    @keyframes hintFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(4px); }
+    }
+
+    .scroll-mouse-icon {
+      width: 18px;
+      height: 28px;
+      border: 2px solid var(--page-accent-light, #22B24C);
+      border: 2px solid var(--green-mint);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      padding-top: 4px;
+    }
+
+    .scroll-mouse-wheel {
+      width: 3px;
+      height: 6px;
+      background: var(--page-accent-light, #22B24C);
+      background: var(--green-mint);
+      border-radius: 2px;
+      animation: mouseWheel 1.6s ease-in-out infinite;
+    }
+
+    @keyframes mouseWheel {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(8px); opacity: 0; }
+    }
+
+    .scroll-hint-text {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.75);
+      color: rgba(255, 255, 255, 0.92);
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.32);
+    }
+
+    /* Complete Frosted Website Footer */
+    /* Complete Frosted Warm Cream Footer */
+    .page-footer-container {
+      position: relative;
+      width: 100%;
+      background: rgba(3, 14, 8, 0.68);
+      background: rgba(250, 248, 242, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      border-top: 1px solid rgba(20, 154, 70, 0.14);
+      color: var(--ink);
+      padding: 56px 7% 32px 7%;
+      z-index: 2;
+    }
+
+    .footer-inner-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer-logo-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-logo-img {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .footer-inst-name {
+      font-weight: 800;
+      font-size: 16px;
+      color: #FFFFFF;
+      color: var(--ink);
+    }
+
+    .footer-desc {
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.75);
+      color: var(--muted);
+      max-width: 480px;
+    }
+
+    .footer-col-title {
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--green-leaf);
+      color: var(--green-primary);
+      letter-spacing: 0.02em;
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links-list a,
+    .footer-links-list button {
+    .footer-links-list button,
+    .footer-links-list span {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.8);
+      color: #2A4535;
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 500;
+      text-align: inherit;
+      cursor: pointer;
+      transition: color 0.2s var(--ease);
+      padding: 0;
+    }
+
+    .footer-links-list a:hover,
+    .footer-links-list button:hover {
+      color: var(--blue-light);
+      color: var(--blue-primary);
+    }
+
+    .footer-bottom-bar {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: 1px solid rgba(20, 154, 70, 0.12);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.6);
+      color: var(--muted);
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-bottom-links a {
+      color: rgba(255, 255, 255, 0.7);
+      color: var(--green-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .footer-bottom-links a:hover {
+      color: var(--blue-light);
+      color: var(--blue-primary);
+    }
+
+    /* Cinematic 3D Navigation Arrows */
+    .cinematic-arrow-btn {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: rgba(5, 25, 15, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.44);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 45;
+      transition: all 0.25s var(--ease);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+    }
+
+    .cinematic-arrow-btn:hover {
+      background: var(--blue-primary);
+      border-color: var(--blue-light);
+      transform: translateY(-50%) scale(1.1);
+      box-shadow: 0 10px 32px var(--blue-glow);
+    }
+
+    .cinematic-arrow-btn svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .cinematic-arrow-btn.right-arrow {
+      right: 28px;
+    }
+
+    .cinematic-arrow-btn.left-arrow {
+      left: 28px;
+    }
+
+    /* Full-Page Views for "About Us" and "Vision & Goals" with Blurred Background */
+    /* Full-Page Views for "About Us" and "Vision & Goals" with Bright Blurred Background & Light Cream Cards */
+    .fullpage-view {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      z-index: 55;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.35s var(--ease), visibility 0.35s var(--ease);
+      scrollbar-width: thin;
+      scrollbar-color: var(--blue-light) rgba(0, 0, 0, 0.45);
+      scrollbar-color: var(--blue-light) rgba(255, 255, 255, 0.25);
+      background: var(--paper);
+    }
+
+    .fullpage-view {
+      background: #030a06;
+    }
+
+    .fullpage-view.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .fullpage-hero {
+      position: relative;
+      width: 100%;
+      min-height: 90vh;
+      padding: 110px 7% 60px 7%;
+      padding: 96px 7% 60px 7%;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      z-index: 2;
+    }
+
+    .fullpage-back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      align-self: flex-start;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      color: #FFFFFF;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 13.5px;
+      font-weight: 700;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      transition: all 0.25s var(--ease);
+    }
+
+    .fullpage-back-btn:hover {
+      background: var(--blue-primary);
+      border-color: var(--blue-light);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px var(--blue-glow);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 253, 248, 0.90);
+      border: 1px solid rgba(255, 255, 255, 0.96);
+      border-radius: 16px;
+      padding: 28px 32px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 12px 32px rgba(21, 40, 29, 0.08);
+    }
+
+    .glass-card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--green-leaf);
+      color: var(--green-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .glass-card p {
+      font-size: 15.5px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.9);
+      color: #263E30;
+    }
+
+    /* Core Values 4-Col Grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .value-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 253, 248, 0.90);
+      border: 1px solid rgba(255, 255, 255, 0.96);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(21, 40, 29, 0.06);
+      transition: all 0.3s var(--ease);
+    }
+
+    .value-box:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--blue-light);
+      background: #FFFFFF;
+      border-color: var(--green-leaf);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(20, 154, 70, 0.12);
+    }
+
+    .value-box h4 {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: var(--blue-light);
+      color: var(--blue-primary);
+      margin-bottom: 8px;
+    }
+
+    .value-box p {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.8);
+      color: var(--muted);
+    }
+
+    /* The 9 Strategic Goals Grid */
+    .goals-grid-9 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 20px;
+    }
+
+    .goal-card-item {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 253, 248, 0.90);
+      border: 1px solid rgba(255, 255, 255, 0.96);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 10px 28px rgba(21, 40, 29, 0.07);
+      display: flex;
+      gap: 18px;
+      transition: all 0.3s var(--ease);
+    }
+
+    .goal-card-item:hover {
+      background: rgba(255, 255, 255, 0.09);
+      background: #FFFFFF;
+      border-color: var(--blue-light);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 124, 168, 0.25);
+      box-shadow: 0 12px 32px rgba(0, 124, 168, 0.14);
+    }
+
+    .goal-number-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--green-primary), var(--blue-primary));
+      background: linear-gradient(135deg, var(--green-light), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 16px;
+      color: #FFFFFF;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(20, 154, 70, 0.22);
+    }
+
+    .goal-card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .goal-card-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #FFFFFF;
+      color: var(--ink);
+    }
+
+    .goal-card-desc {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.78);
+      color: var(--muted);
+    }
+
+    /* Responsive Adjustments & Mobile Navigation */
+    @media (max-width: 1280px) {
+      .top-bar {
+        padding: 0 18px;
+      }
+
+      .brand-name {
+        font-size: 16px;
+      }
+
+      .brand-tagline span:first-child {
+        display: none;
+      }
+
+      .top-bar-end {
+        gap: 8px;
+      }
+
+      .top-bar-nav {
+        gap: 2px;
+      }
+
+      .nav-tab-link {
+        padding: 6px 7px;
+        font-size: 13.5px;
+      }
+
+      .page-counter-badge {
+        padding: 3px 8px;
+      }
+    }
+
+    @media (max-width: 1140px) {
+      .brand-group {
+        min-width: 0;
+        flex: 1 1 auto;
+        gap: 10px;
+        overflow: hidden;
+      }
+
+      .brand-text-wrap {
+        min-width: 0;
+        overflow: hidden;
+      }
+
+      .brand-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+
+      .mobile-menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        width: 38px;
+        height: 38px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.36);
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 0;
+        flex-shrink: 0;
+      }
+
+      .top-bar-nav {
+        display: none;
+      }
+
+      .top-bar-nav.mobile-open {
+        display: flex;
+        position: fixed;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background: rgba(3, 14, 8, 0.96);
+        background: rgba(250, 248, 242, 0.96);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 18px 24px 26px 24px;
+        gap: 8px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(20, 154, 70, 0.16);
+        box-shadow: 0 12px 32px rgba(21, 40, 29, 0.14);
+        z-index: 59;
+        align-items: stretch;
+      }
+
+      .top-bar-nav.mobile-open .nav-tab-link {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 4px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        color: var(--ink) !important;
+        text-shadow: none;
+        border-bottom: 1px solid rgba(20, 154, 70, 0.08);
+      }
+
+      .top-bar-nav.mobile-open .nav-tab-link.active {
+        color: var(--blue-primary) !important;
+      }
+
+      .top-bar-nav.mobile-open .page-counter-badge {
+        margin-bottom: 6px;
+        background: rgba(20, 154, 70, 0.10);
+        border-color: rgba(20, 154, 70, 0.22);
+        color: var(--ink);
+        text-shadow: none;
+      }
+
+      .top-bar-nav.mobile-open .page-counter-badge span {
+        color: var(--ink);
+      }
+
+      .top-bar-nav.mobile-open .page-counter-badge #counter-current {
+        color: var(--green-primary);
+      }
+    }
+
+    @media (max-width: 860px) {
+      .top-bar {
+        padding: 0 14px;
+        height: 64px;
+      }
+
+      .brand-group {
+        gap: 8px;
+      }
+
+      .brand-logo-img {
+        height: 36px;
+        flex-shrink: 0;
+      }
+
+      .brand-name {
+        font-size: 14px !important;
+        max-width: 175px;
+      }
+
+      .brand-tagline {
+        display: none !important;
+      }
+
+      .top-bar-end {
+        gap: 6px;
+        flex-shrink: 0;
+      }
+
+      .top-bar-actions {
+        gap: 6px;
+      }
+
+      .lang-switch-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+      }
+
+      .mobile-menu-btn {
+        width: 36px;
+        height: 36px;
+      }
+
+      .top-bar-nav.mobile-open {
+        top: 64px;
+        padding: 16px 20px 24px 20px;
+      }
+
+      .footer-inner-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .cinematic-arrow-btn {
+        width: 44px;
+        height: 44px;
+      }
+
+      .cinematic-arrow-btn.right-arrow {
+        right: 12px;
+      }
+
+      .cinematic-arrow-btn.left-arrow {
+        left: 12px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page-hero-section {
+        padding: 85px 16px 35px 16px;
+      }
+
+      .brand-logo-img {
+        height: 36px;
+      }
+
+      .brand-name {
+        font-size: 15px;
+      }
+
+      .hero-center-container {
+        padding: 0 8px;
+        gap: 15px;
+      }
+
+      .hero-main-title {
+        font-size: 26px;
+      }
+    }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fixed Top Navigation Bar -->
+  <header class="top-bar">
+    <a href="#" class="brand-group" id="brand-home-link" aria-label="مؤسسة رمضان للتنمية الاقتصادية">
+      <img src="assets/logo.png" alt="شعار مؤسسة رمضان للتنمية الاقتصادية" class="brand-logo-img">
+      <div class="brand-text-wrap">
+        <span class="brand-name" id="i18n-brand-name">مؤسسة رمضان للتنمية الاقتصادية</span>
+        <div class="brand-tagline">
+          <span id="i18n-brand-tagline">تمكين اقتصادي… كرامة إنسانية… وتنمية تصنع المستقبل</span>
+          <span class="reg-badge" id="i18n-reg-badge">إشهار 12307 لسنة 2025</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Unified Single Bar: Nav Links in middle/right + Actions (Lang button & mobile toggle) at far right -->
+    <div class="top-bar-end">
+      <!-- Main Navigation Links -->
+      <nav class="top-bar-nav" id="top-bar-nav">
+        <div class="page-counter-badge" id="header-page-counter">
+          <span id="i18n-initiative-label">المبادرة</span> <span id="counter-current">01</span> / 12
+        </div>
+
+        <button class="nav-tab-link active" id="tab-nav-initiatives">
+          <span class="tab-title" id="i18n-nav-initiatives">المبادرات</span>
+        </button>
+
+        <button class="nav-tab-link" id="tab-nav-about">
+          <span class="tab-title" id="i18n-nav-about">عن المؤسسة</span>
+        </button>
+
+        <button class="nav-tab-link" id="tab-nav-goals">
+          <span class="tab-title" id="i18n-nav-goals">الرؤية والأهداف</span>
+        </button>
+
+        <!-- Follow Us on Facebook - Direct clean link without QR modal -->
+        <a href="https://www.facebook.com/RamadanCharityEG" target="_blank" rel="noopener noreferrer" class="nav-tab-link fb-tab-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <span class="tab-title" id="i18n-nav-facebook">تابعنا على فيسبوك</span>
+        </a>
+      </nav>
+
+      <!-- Language Switcher & Mobile Menu Trigger (Far Right) -->
+      <div class="top-bar-actions">
+        <button class="lang-switch-btn" id="btn-lang-switch" aria-label="تغيير اللغة / Switch Language">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          <span id="lang-switch-label">English</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="قائمة التنقل">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3D Cinematic Showcase Stage -->
+  <main class="stage-viewport" id="stage-viewport" aria-label="المعرض التفاعلي لمبادرات مؤسسة رمضان">
+    <div class="pages-track" id="pages-track">
+      <!-- 12 Immersive Full-Page Environments injected by JS -->
+    </div>
+  </main>
+
+  <!-- Cinematic 3D Navigation Arrows (Right = Next Page, Left = Previous Page) -->
+  <button class="cinematic-arrow-btn right-arrow" id="btn-next" aria-label="الصفحة التالية على اليمين" title="الصفحة التالية على اليمين (السهم الأيمن)">
+    <svg viewBox="0 0 24 24">
+      <path d="M9 18l6-6-6-6"/>
+    </svg>
+  </button>
+  <button class="cinematic-arrow-btn left-arrow" id="btn-prev" aria-label="الصفحة السابقة على اليسار" title="الصفحة السابقة على اليسار (السهم الأيسر)">
+    <svg viewBox="0 0 24 24">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+  </button>
+
+  <!-- FULL-PAGE VIEW: About Us Page (Opened with Blurred Background as Slider Pages) -->
+  <section class="fullpage-view" id="about-fullpage" role="dialog" aria-modal="true" aria-label="عن المؤسسة">
+    <div class="page-content-wrapper">
+      <!-- Blurred Photo Background Layer Describing Foundation -->
+      <div class="page-bg-frame">
+        <div class="page-bg-photo" style="background-image: url('assets/soft-skills-bg.jpg');"></div>
+        <div class="page-bg-photo-overlay"></div>
+      </div>
+
+      <div class="fullpage-hero">
+        <button class="fullpage-back-btn back-to-slider-btn">
+          <span class="back-arrow-icon">←</span>
+          <span id="i18n-about-back">العودة لمعرض المبادرات</span>
+        </button>
+
+        <div class="hero-emblem-badge" style="background: rgba(18, 150, 67, 0.2); border-color: rgba(18, 150, 67, 0.5); box-shadow: 0 10px 30px rgba(18, 150, 67, 0.3);">
+          <img src="assets/logo.png" alt="Logo" style="width: 44px; height: 44px; object-fit: contain;">
+        </div>
+
+        <div class="hero-titles-wrap">
+          <div class="meta-badges-row">
+            <span class="badge-item highlight" id="i18n-about-badge">مؤسسة تنموية غير هادفة للربح</span>
+            <span class="badge-year" id="i18n-about-reg-badge">إشهار 12307 لسنة 2025</span>
+          </div>
+          <h1 class="hero-main-title" id="i18n-about-title">مؤسسة رمضان للتنمية الاقتصادية</h1>
+          <span class="hero-en-title" id="i18n-about-subtitle">"تمكين اقتصادي… كرامة إنسانية… وتنمية تصنع المستقبل"</span>
+          <div class="hero-rule-divider"></div>
+        </div>
+
+        <!-- Who We Are Card -->
+        <div class="glass-card">
+          <h3 id="i18n-about-who-title">📍 من نحن</h3>
+          <p id="i18n-about-who-p">
+            مؤسسة رمضان للتنمية الاقتصادية هي منظمة غير ربحية تسعى إلى تعزيز الاستقرار الاقتصادي وتمكين الأفراد والأسر من تحقيق الاكتفاء الذاتي من خلال دعم المشاريع الصغيرة، وتوفير التدريب والتأهيل المهني، وتشجيع ريادة الأعمال. نؤمن بأن التنمية الاقتصادية المستدامة هي المفتاح لتحسين جودة الحياة، ونعمل على تقديم حلول عملية وفرص حقيقية للنهوض بالمجتمع.
+          </p>
+        </div>
+
+        <!-- Mission Card -->
+        <div class="glass-card">
+          <h3 id="i18n-about-mission-title">🎯 رسالتنا</h3>
+          <p id="i18n-about-mission-p">
+            نلتزم بتمكين الأفراد اقتصاديًا من خلال توفير التدريب، والدعم المالي، والاستشارات المتخصصة، وتعزيز ثقافة العمل الحر والمشروعات الصغيرة، بهدف بناء مجتمع أكثر استقلالية ونموًا.
+          </p>
+        </div>
+
+        <!-- Core Values 4-Col Grid -->
+        <div class="values-grid">
+          <div class="value-box">
+            <h4 id="i18n-val1-title">✨ الكرامة الإنسانية</h4>
+            <p id="i18n-val1-p">تمكين الأسر من العمل الشريف والاكتفاء الذاتي المستدام.</p>
+          </div>
+          <div class="value-box">
+            <h4 id="i18n-val2-title">🌱 التنمية المستدامة</h4>
+            <p id="i18n-val2-p">بناء مشاريع وحرف متوارثة وممتدة تحقق أثراً دائماً.</p>
+          </div>
+          <div class="value-box">
+            <h4 id="i18n-val3-title">🤝 الشفافية والمسؤولية</h4>
+            <p id="i18n-val3-p">إدارة الموارد بأعلى معايير الحوكمة والشراكة الفاعلة.</p>
+          </div>
+          <div class="value-box">
+            <h4 id="i18n-val4-title">💡 الابتكار والريادة</h4>
+            <p id="i18n-val4-p">تحويل التحديات الاقتصادية إلى فرص إنتاجية ملموسة.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-Page Integrated Footer -->
+      <footer class="page-footer-container dynamic-footer">
+        <!-- Rendered by JS -->
+      </footer>
+    </div>
+  </section>
+
+  <!-- FULL-PAGE VIEW: Vision & Goals Page (Opened with Blurred Background as Slider Pages) -->
+  <section class="fullpage-view" id="goals-fullpage" role="dialog" aria-modal="true" aria-label="الرؤية والأهداف">
+    <div class="page-content-wrapper">
+      <!-- Blurred Photo Background Layer Describing Goals -->
+      <div class="page-bg-frame">
+        <div class="page-bg-photo" style="background-image: url('assets/micro-enterprises-bg.jpg');"></div>
+        <div class="page-bg-photo-overlay"></div>
+      </div>
+
+      <div class="fullpage-hero">
+        <button class="fullpage-back-btn back-to-slider-btn">
+          <span class="back-arrow-icon">←</span>
+          <span id="i18n-goals-back">العودة لمعرض المبادرات</span>
+        </button>
+
+        <div class="hero-emblem-badge" style="background: rgba(0, 124, 168, 0.2); border-color: rgba(0, 124, 168, 0.5); box-shadow: 0 10px 30px rgba(0, 124, 168, 0.3);">
+          <svg viewBox="0 0 24 24" style="fill: #0299D6; width: 40px; height: 40px;">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+        </div>
+
+        <div class="hero-titles-wrap">
+          <div class="meta-badges-row">
+            <span class="badge-item highlight" id="i18n-goals-badge">الرؤية والأهداف الاستراتيجية</span>
+            <span class="badge-year">2025 — 2030</span>
+          </div>
+          <h1 class="hero-main-title" id="i18n-goals-title">رؤيتنا وأهدافنا الاستراتيجية</h1>
+          <span class="hero-en-title" id="i18n-goals-subtitle">خارطة طريق نحو تمكين مجتمعي وتنمية اقتصادية مستدامة</span>
+          <div class="hero-rule-divider" style="background: linear-gradient(90deg, var(--blue-cyan), var(--green-leaf));"></div>
+        </div>
+
+        <!-- Vision Statement Card -->
+        <div class="glass-card" style="border-inline-start: 4px solid var(--blue-cyan);">
+          <h3 id="i18n-vision-box-title">🌟 الرؤية المستقبلية</h3>
+          <p id="i18n-vision-box-p">
+            أن نكون روادًا في تحقيق التنمية الاقتصادية المستدامة، ونساهم في خلق مجتمع منتج يعتمد على الابتكار وريادة الأعمال لتحقيق الاستقرار المالي والرفاهية الاقتصادية.
+          </p>
+        </div>
+
+        <!-- 9 Strategic Goals Grid -->
+        <div class="goals-grid-9" id="goals-cards-container">
+          <!-- Injected dynamically by JS for AR and EN -->
+        </div>
+      </div>
+
+      <!-- Full-Page Integrated Footer -->
+      <footer class="page-footer-container dynamic-footer">
+        <!-- Rendered by JS -->
+      </footer>
+    </div>
+  </section>
+
+  <!-- JavaScript Full-Screen 3D Cinematic Slider & Bilingual Engine -->
+  <script>
+    (function() {
+      'use strict';
+
+      /* --- Bilingual Content System (Arabic & English) --- */
+      let currentLang = 'ar'; // 'ar' or 'en'
+
+      const TRANSLATIONS = {
+        ar: {
+          brandName: "مؤسسة رمضان للتنمية الاقتصادية",
+          brandTagline: "تمكين اقتصادي… كرامة إنسانية… وتنمية تصنع المستقبل",
+          regBadge: "إشهار 12307 لسنة 2025",
+          initiativeLabel: "المبادرة",
+          navInitiatives: "المبادرات",
+          navAbout: "عن المؤسسة",
+          navGoals: "الرؤية والأهداف",
+          navFacebook: "تابعنا على فيسبوك",
+          langSwitchLabel: "English",
+          nextArrowTitle: "الصفحة التالية على اليمين (السهم الأيمن)",
+          prevArrowTitle: "الصفحة السابقة على اليسار (السهم الأيسر)",
+          aboutBack: "العودة لمعرض المبادرات",
+          aboutBadge: "مؤسسة تنموية غير هادفة للربح",
+          aboutRegBadge: "إشهار 12307 لسنة 2025",
+          aboutTitle: "عن مؤسسة رمضان للتنمية الاقتصادية",
+          aboutSubtitle: '"تمكين اقتصادي… كرامة إنسانية… وتنمية تصنع المستقبل"',
+          aboutWhoTitle: "📍 من نحن",
+          aboutWhoP: "مؤسسة رمضان للتنمية الاقتصادية هي منظمة غير ربحية تسعى إلى تعزيز الاستقرار الاقتصادي وتمكين الأفراد والأسر من تحقيق الاكتفاء الذاتي من خلال دعم المشاريع الصغيرة، وتوفير التدريب والتأهيل المهني، وتشجيع ريادة الأعمال. نؤمن بأن التنمية الاقتصادية المستدامة هي المفتاح لتحسين جودة الحياة، ونعمل على تقديم حلول عملية وفرص حقيقية للنهوض بالمجتمع.",
+          aboutMissionTitle: "🎯 رسالتنا",
+          aboutMissionP: "نلتزم بتمكين الأفراد اقتصاديًا من خلال توفير التدريب، والدعم المالي، والاستشارات المتخصصة، وتعزيز ثقافة العمل الحر والمشروعات الصغيرة، بهدف بناء مجتمع أكثر استقلالية ونموًا.",
+          val1Title: "✨ الكرامة الإنسانية",
+          val1P: "تمكين الأسر من العمل الشريف والاكتفاء الذاتي المستدام.",
+          val2Title: "🌱 التنمية المستدامة",
+          val2P: "بناء مشاريع وحرف متوارثة وممتدة تحقق أثراً دائماً.",
+          val3Title: "🤝 الشفافية والمسؤولية",
+          val3P: "إدارة الموارد بأعلى معايير الحوكمة والشراكة الفاعلة.",
+          val4Title: "💡 الابتكار والريادة",
+          val4P: "تحويل التحديات الاقتصادية إلى فرص إنتاجية ملموسة.",
+          goalsBack: "العودة لمعرض المبادرات",
+          goalsBadge: "الرؤية والأهداف الاستراتيجية",
+          goalsTitle: "رؤيتنا وأهدافنا الاستراتيجية",
+          goalsSubtitle: "خارطة طريق نحو تمكين مجتمعي وتنمية اقتصادية مستدامة",
+          visionBoxTitle: "🌟 الرؤية المستقبلية",
+          visionBoxP: "أن نكون روادًا في تحقيق التنمية الاقتصادية المستدامة، ونساهم في خلق مجتمع منتج يعتمد على الابتكار وريادة الأعمال لتحقيق الاستقرار المالي والرفاهية الاقتصادية.",
+          pillarLabel: "ركيزة أساسية للمشروع",
+          ctaFb: "متابعة تفاصيل المبادرة على فيسبوك",
+          ctaContact: "طلب استفسار / تواصل",
+          ctaAbout: "عن المؤسسة والأهداف",
+          scrollHint: "مرر للأسفل لقراءة التفاصيل والتواصل مع المؤسسة",
+          footerDesc: "منظمة غير ربحية تسعى لتعزيز الاستقرار الاقتصادي وتمكين الأفراد والأسر من تحقيق الاكتفاء الذاتي من خلال دعم المشاريع الصغيرة، والتدريب والتأهيل المهني، وتشجيع ريادة الأعمال.",
+          footerColQuick: "روابط سريعة",
+          footerColContact: "التواصل الرسمي",
+          footerLinkAbout: "عن المؤسسة ورسالتها",
+          footerLinkGoals: "الأهداف الاستراتيجية التسعة",
+          footerLinkFb: "صفحة الفيسبوك الرسمية",
+          footerEmail: "البريد: info@ramadancharity.org",
+          footerReg: "الإشهار: وزارة التضامن 12307 لسنة 2025",
+          footerSlogan: "الشعار: تمكين اقتصادي… كرامة إنسانية… وتنمية تصنع المستقبل",
+          footerCopyright: "© 2026 مؤسسة رمضان للتنمية الاقتصادية. جميع الحقوق محفوظة."
+        },
+        en: {
+          brandName: "Ramadan Economic Development Foundation",
+          brandTagline: "Economic Empowerment… Human Dignity… Sustainable Future",
+          regBadge: "Reg. No. 12307 / 2025",
+          initiativeLabel: "Initiative",
+          navInitiatives: "Initiatives",
+          navAbout: "About Us",
+          navGoals: "Vision & Goals",
+          navFacebook: "Follow Us on Facebook",
+          langSwitchLabel: "العربية",
+          nextArrowTitle: "Next Page on the Right (Right Arrow)",
+          prevArrowTitle: "Previous Page on the Left (Left Arrow)",
+          aboutBack: "Back to Initiatives",
+          aboutBadge: "Non-Profit Development Organization",
+          aboutRegBadge: "Registered No. 12307 of 2025",
+          aboutTitle: "About Ramadan Foundation",
+          aboutSubtitle: '"Economic Empowerment… Human Dignity… Development Shaping the Future"',
+          aboutWhoTitle: "📍 Who We Are",
+          aboutWhoP: "Ramadan Economic Development Foundation is a non-profit organization dedicated to fostering economic stability and empowering individuals and families toward self-reliance through small enterprise development, vocational training, and entrepreneurship. We believe sustainable economic development is the gateway to improving quality of life, delivering practical solutions and tangible opportunities to elevate society.",
+          aboutMissionTitle: "🎯 Our Mission",
+          aboutMissionP: "We are committed to economically empowering individuals by providing hands-on training, financial backing, specialized advisory, and cultivating a culture of freelancing and small enterprises to build an independent, thriving community.",
+          val1Title: "✨ Human Dignity",
+          val1P: "Enabling families through dignified, productive work and lasting self-reliance.",
+          val2Title: "🌱 Sustainable Growth",
+          val2P: "Cultivating enduring crafts and ventures with intergenerational impact.",
+          val3Title: "🤝 Transparency & Trust",
+          val3P: "Managing resources with uncompromising governance and trusted partnerships.",
+          val4Title: "💡 Innovation & Leadership",
+          val4P: "Transforming socioeconomic challenges into tangible productive opportunities.",
+          goalsBack: "Back to Initiatives",
+          goalsBadge: "Vision & Strategic Goals",
+          goalsTitle: "Our Vision & Strategic Goals",
+          goalsSubtitle: "A Strategic Roadmap Towards Community Self-Reliance and Economic Well-Being",
+          visionBoxTitle: "🌟 Our Vision",
+          visionBoxP: "To be pioneers in achieving sustainable economic development, contributing to building a productive society powered by innovation and entrepreneurship to ensure financial stability and economic well-being.",
+          pillarLabel: "Strategic Pillar",
+          ctaFb: "Follow Initiative Details on Facebook",
+          ctaContact: "Inquire / Contact Us",
+          ctaAbout: "About Foundation & Goals",
+          scrollHint: "Scroll down to read full details & connect with us",
+          footerDesc: "A non-profit organization dedicated to enhancing economic stability and empowering individuals and families toward self-reliance through small business support, vocational training, and entrepreneurship.",
+          footerColQuick: "Quick Links",
+          footerColContact: "Official Contact",
+          footerLinkAbout: "About the Foundation & Mission",
+          footerLinkGoals: "The 9 Strategic Goals",
+          footerLinkFb: "Official Facebook Page",
+          footerEmail: "Email: info@ramadancharity.org",
+          footerReg: "Registration: Ministry of Solidarity 12307 / 2025",
+          footerSlogan: "Motto: Economic Empowerment… Human Dignity… Sustainable Future",
+          footerCopyright: "© 2026 Ramadan Economic Development Foundation. All rights reserved."
+        }
+      };
+
+      /* The 9 Strategic Goals Data in AR and EN */
+      const STRATEGIC_GOALS = [
+        {
+          num: "01",
+          arTitle: "دعم وتمويل المشاريع الصغيرة",
+          arDesc: "توفير التمويل الميسر والاستشارات للمشروعات الصغيرة لتشجيع بدء الأعمال الجديدة وضمان استدامتها.",
+          enTitle: "Supporting & Financing Micro-Enterprises",
+          enDesc: "Providing accessible financing and mentorship to encourage business launches and ensure long-term viability."
+        },
+        {
+          num: "02",
+          arTitle: "برامج التدريب والتأهيل المهني",
+          arDesc: "تقديم برامج تطبيقية متخصصة في الحرف والصناعات الخفيفة والمهارات الحديثة تلبي متطلبات سوق العمل الفعلي.",
+          enTitle: "Vocational & Professional Training",
+          enDesc: "Delivering specialized hands-on training in craftsmanship, light industries, and skills demanded by the labor market."
+        },
+        {
+          num: "03",
+          arTitle: "التمكين الاقتصادي للشباب والنساء",
+          arDesc: "تمكين الشباب والنساء المعيلات وتوفير فرص عمل مستدامة وحاضنات للمشروعات المنزلية والإنتاجية.",
+          enTitle: "Economic Empowerment for Youth & Women",
+          enDesc: "Empowering young people and breadwinning women with sustainable jobs and incubator support for home-based crafts."
+        },
+        {
+          num: "04",
+          arTitle: "نشر ثقافة ريادة الأعمال والابتكار",
+          arDesc: "غرس فكر العمل الحر وتشجيع الأفكار الإبداعية وتحويل التحديات المعيشية إلى منتجات ذات قيمة مضافة.",
+          enTitle: "Fostering Entrepreneurship & Innovation",
+          enDesc: "Instilling an entrepreneurial mindset and transforming grassroots challenges into value-added economic ventures."
+        },
+        {
+          num: "05",
+          arTitle: "الاستشارات المالية والإدارية للمشاريع",
+          arDesc: "مساعدة رواد الأعمال في إعداد دراسات الجدوى، استراتيجيات التسعير، وإدارة التكاليف لتقليل مخاطر التعثر.",
+          enTitle: "Financial & Management Advisory",
+          enDesc: "Assisting entrepreneurs with rigorous feasibility studies, pricing formulas, and cash-flow management."
+        },
+        {
+          num: "06",
+          arTitle: "الشراكات المؤسسية الفاعلة",
+          arDesc: "بناء تحالفات استراتيجية مع القطاع الخاص والمؤسسات الأهلية لتوسيع نطاق الدعم والفرص المتاحة للمستفيدين.",
+          enTitle: "Impactful Institutional Partnerships",
+          enDesc: "Forging strategic alliances with private enterprise and civil society to expand opportunities for beneficiaries."
+        },
+        {
+          num: "07",
+          arTitle: "المساعدات الطبية وتوفير الأدوية",
+          arDesc: "تقديم المساعدات العلاجية الضرورية والأدوية للأفراد والأسر غير القادرين كجزء أصيل من الحماية المجتمعية.",
+          enTitle: "Medical Assistance & Vital Medications",
+          enDesc: "Providing essential healthcare aid and medications to underprivileged individuals as a core tenet of social security."
+        },
+        {
+          num: "08",
+          arTitle: "الفحوصات الطبية الدورية الشاملة",
+          arDesc: "تنظيم القوافل الطبية وإجراء التحاليل والفحوصات الدورية للكشف المبكر عن الأمراض في المجتمعات الأكثر احتياجًا.",
+          enTitle: "Periodic Medical Screenings",
+          enDesc: "Organizing medical convoys and routine diagnostic screenings for early disease detection in vulnerable areas."
+        },
+        {
+          num: "09",
+          arTitle: "التعاون مع الصروح الطبية المعتمدة",
+          arDesc: "التنسيق المستمر مع المستشفيات والمراكز العلاجية المرموقة لتيسير تلقي الحالات الحرجة للرعاية الطبية المتقدمة.",
+          enTitle: "Collaboration with Accredited Hospitals",
+          enDesc: "Coordinating with certified medical institutions and specialized clinics to secure advanced treatment for critical cases."
+        }
+      ];
+
+                  /* --- Initiatives Catalog (12 Complete Programs) --- */
+      const INITIATIVES = [
+        {
+          "id": "food-aid",
+          "title": "الدعم الغذائي وتكافل رمضان",
+          "enTitle": "Food Aid & Ramadan Solidarity",
+          "category": "مبادرات مُنفذة ومستمرة",
+          "enCategory": "Ongoing & Executed Initiatives",
+          "year": 2025,
+          "tag": "تكافل مجتمعي",
+          "enTag": "Community Solidarity",
+          "badge": "منجز 2025 - 2026",
+          "enBadge": "Achieved 2025 - 2026",
+          "bgImage": "assets/food-aid-bg.jpg",
+          "accent": "#129643",
+          "accentLight": "#22B24C",
+          "accentGlow": "rgba(18, 150, 67, 0.55)",
+          "synopsis": "توزيع كراتين غذائية متكاملة تحتوي على المواد الأساسية للأسر الأكثر احتياجًا خلال شهر رمضان المبارك في عامي 2025 و2026، انطلاقًا من إيمان المؤسسة بأن العطاء مسؤولية مجتمعية، وأن التكافل هو جوهر التنمية الإنسانية المستدامة وتخفيف الأعباء المعيشية عن كاهل الأسر المتعففة.",
+          "enSynopsis": "Distributing comprehensive food boxes containing staple nutritional supplies to underprivileged families during the Holy Month of Ramadan in 2025 and 2026, driven by the conviction that giving is a sacred social duty and community solidarity is the foundation of sustainable human development.",
+          "highlights": [
+            "توزيع آلاف الكراتين الرمضانية المتكاملة",
+            "التغطية الجغرافية للقرى والمحافظات الأكثر استحقاقاً",
+            "مبادرة مستدامة مستمرة وتوسعت لتشمل رمضان 2026"
+          ],
+          "enHighlights": [
+            "Distribution of thousands of complete nutritional food boxes",
+            "Extensive geographic coverage across underprivileged villages and governorates",
+            "Sustainable ongoing initiative expanded to encompass Ramadan 2026"
+          ],
+          "iconSvg": "<path d=\"M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.65-.5-.65C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.1-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1h-2.22l.8-1.07C13.84 4.36 14.39 4 15 4zM9 4c.61 0 1.16.36 1.42.93l.8 1.07H9c-.55 0-1-.45-1-1s.45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76V8h2v.76L15.38 12 17 10.83 14.92 8H20v6z\"/>"
+        },
+        {
+          "id": "wheelchair-heroes",
+          "title": "تمكين ودعم أبطال الكراسي المتحركة",
+          "enTitle": "Wheelchair Basketball African Champions",
+          "category": "مبادرات مُنفذة ومستمرة",
+          "enCategory": "Ongoing & Executed Initiatives",
+          "year": 2025,
+          "tag": "تمكين رياضي وشبابي",
+          "enTag": "Sports & Youth Empowerment",
+          "badge": "شراكة MRG & مران",
+          "enBadge": "MRG & Maraan Partnership",
+          "bgImage": "assets/wheelchair-heroes-bg.jpg",
+          "accent": "#007CA8",
+          "accentLight": "#0299D6",
+          "accentGlow": "rgba(0, 124, 168, 0.55)",
+          "synopsis": "رعاية ودعم فريق كرة السلة للكراسي المتحركة المتوج ببطولة أفريقيا للأندية وتأهله التاريخي لكأس العالم للأندية في إسبانيا، إيماناً بقدرات الأبطال وتحويل التحديات إلى إنجازات عالمية.",
+          "enSynopsis": "Proudly sponsoring and backing the wheelchair basketball team crowned African Club Champions and qualified for the World Club Championship in Spain, demonstrating that sheer will turns obstacles into international triumphs.",
+          "highlights": [
+            "رعاية أبطال أفريقيا والتأهل لكأس العالم للأندية بإسبانيا",
+            "توفير التجهيزات والدعم الرياضي والفني المتكامل للأبطال",
+            "دمج وتمكين أصحاب الهمم في المحافل الرياضية الدولية"
+          ],
+          "enHighlights": [
+            "Sponsoring African Champions qualified for the World Club Championship in Spain",
+            "Supplying specialized sporting equipment and professional technical support",
+            "Empowering and celebrating people of determination on premier global athletic stages"
+          ],
+          "iconSvg": "<path d=\"M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z\"/>"
+        },
+        {
+          "id": "crafts-trades",
+          "title": "الحرف والمهن الإنتاجية",
+          "enTitle": "Productive Crafts & Trades",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2026,
+          "tag": "حرف يدوية وتصنيع",
+          "enTag": "Handcrafts & Manufacturing",
+          "badge": "استقلال اقتصادي",
+          "enBadge": "Economic Self-Reliance",
+          "bgImage": "assets/crafts-trades-bg.jpg",
+          "accent": "#B87333",
+          "accentLight": "#D48B47",
+          "accentGlow": "rgba(184, 115, 51, 0.55)",
+          "synopsis": "تأهيل وتدريب الكوادر في المهن الحرفية واليدوية كصيانة الأجهزة المنزلية، السباكة، النجارة، الخياطة والتطريز، والمصنوعات الجلدية لإكسابهم مهارات إنتاجية فورية تضمن دخلاً مستداماً.",
+          "enSynopsis": "Training and qualifying individuals in vital trades such as appliance repair, modern plumbing, carpentry, couture sewing, and fine leatherwork to provide hands-on marketable skills for sustainable income.",
+          "highlights": [
+            "ورش عمل تطبيقية متقدمة في صيانة الأجهزة والسباكة والنجارة",
+            "برامج متخصصة في الخياطة والتطريز والصناعات الجلدية اليدوية",
+            "ربط الخريجين بسوق العمل ودعم تأسيس ورش العمل الخاصة"
+          ],
+          "enHighlights": [
+            "Hands-on workshops in electrical appliance repair, modern plumbing, and woodwork",
+            "Specialized masterclasses in bespoke tailoring, embroidery, and handmade leather goods",
+            "Labor market placement and incubator grants for launching independent workshops"
+          ],
+          "iconSvg": "<path d=\"M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z\"/>"
+        },
+        {
+          "id": "vocational-repair",
+          "title": "التدريب المهني والصناعات الخفيفة",
+          "enTitle": "Vocational Training & Light Industries",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2027,
+          "tag": "تأهيل صناعي فني",
+          "enTag": "Technical & Industrial Training",
+          "badge": "تصنيع محلي",
+          "enBadge": "Local Manufacturing",
+          "bgImage": "assets/vocational-repair-bg.jpg",
+          "accent": "#1A568C",
+          "accentLight": "#267AC7",
+          "accentGlow": "rgba(26, 86, 140, 0.55)",
+          "synopsis": "تدريب الشباب على الصناعات الخفيفة وإنتاج المنظفات ومستحضرات العناية البسيطة، والطباعة على الملابس والأكواب، وصيانة الإلكترونيات والهواتف، لدعم التصنيع المحلي وتوليد فرص عمل سريعة.",
+          "enSynopsis": "Empowering youth through light industrial manufacturing: organic detergents and cleansers, sublimation printing on apparel and drinkware, and electronics/smartphone maintenance to foster localized industry.",
+          "highlights": [
+            "تصنيع المنظفات المنزلية ومستحضرات العناية وفق معايير الجودة",
+            "تقنيات الطباعة الحرارية والمجسمة على الأقمشة والأكواب والدعايات",
+            "صيانة وبرمجة الهواتف الذكية والأجهزة اللوحية والإلكترونيات"
+          ],
+          "enHighlights": [
+            "High-standard formulation and manufacturing of eco-friendly detergents and sanitizers",
+            "Heat-press sublimation and 3D printing on garments, ceramic mugs, and gifts",
+            "Diagnostic hardware and software maintenance for mobile phones and smart devices"
+          ],
+          "iconSvg": "<path d=\"M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3 1.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66z\"/>"
+        },
+        {
+          "id": "eco-recycling",
+          "title": "إعادة التدوير والحرف البيئية الخضراء",
+          "enTitle": "Eco-Recycling & Green Crafts",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2027,
+          "tag": "استدامة بيئية",
+          "enTag": "Environmental Sustainability",
+          "badge": "اقتصاد دائري أخضر",
+          "enBadge": "Circular Green Economy",
+          "bgImage": "assets/eco-recycling-bg.jpg",
+          "accent": "#198754",
+          "accentLight": "#20C997",
+          "accentGlow": "rgba(25, 135, 84, 0.55)",
+          "synopsis": "نشر الوعي البيئي وتحويل المخلفات إلى منتجات ذات قيمة اقتصادية من خلال إعادة تدوير الورق والكرتون، تصنيع منتجات صديقة للبيئة من مخلفات النخيل والأقمشة، وإنتاج الأسمدة العضوية (الكمبوست).",
+          "enSynopsis": "Transforming waste into valuable economic goods via cardboard and paper upcycling, eco-friendly crafts from palm residue and textile remnants, and high-nutrient organic compost production.",
+          "highlights": [
+            "تدوير الورق والأقمشة وتحويلها إلى تحف ومنتجات قابلة للبيع",
+            "استثمار مخلفات النخيل والأخشاب في صناعات يدوية راقية",
+            "إنتاج الكمبوست الزراعي العضوي عالي الجودة وتحقيق عوائد بيئية"
+          ],
+          "enHighlights": [
+            "Upcycling paper, carton, and discarded textiles into marketable artisan pieces",
+            "Repurposing palm biomass and reclaimed wood into high-end eco-crafts",
+            "Producing chemical-free organic compost to enrich sustainable agricultural output"
+          ],
+          "iconSvg": "<path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z\"/>"
+        },
+        {
+          "id": "soft-skills",
+          "title": "التأهيل الوظيفي وتنمية المهارات",
+          "enTitle": "Workforce Readiness & Soft Skills",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2028,
+          "tag": "مهارات احترافية",
+          "enTag": "Professional Development",
+          "badge": "جاهزية سوق العمل",
+          "enBadge": "Labor Market Readiness",
+          "bgImage": "assets/soft-skills-bg.jpg",
+          "accent": "#4361EE",
+          "accentLight": "#6B85FF",
+          "accentGlow": "rgba(67, 97, 238, 0.55)",
+          "synopsis": "إعداد وتأهيل الشباب لمتطلبات سوق العمل المعاصر عبر دورات كتابة السيرة الذاتية الاحترافية، مهارات اجتياز مقابلات العمل، التواصل الفعال، العمل الجماعي، وإدارة الوقت وحل المشكلات في بيئة العمل.",
+          "enSynopsis": "Equipping youth for modern corporate standards: ATS-compatible resume drafting, interview simulations, high-impact workplace communication, team synergy, time optimization, and creative problem solving.",
+          "highlights": [
+            "صياغة السير الذاتية الاحترافية المتوافقة مع أنظمة التوظيف ATS",
+            "التدريب العملي والمحاكاة الواقعية لمقابلات العمل الشخصية",
+            "تنمية مهارات التفاوض والتواصل المؤسسي وحل المشكلات المعقدة"
+          ],
+          "enHighlights": [
+            "Drafting ATS-optimized professional resumes and compelling career profiles",
+            "Hands-on mock interview simulations with executive HR feedback",
+            "Sharpening negotiation techniques, corporate communication, and workplace agility"
+          ],
+          "iconSvg": "<path d=\"M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z\"/>"
+        },
+        {
+          "id": "freelance-digital",
+          "title": "العمل الحر والتسويق الرقمي",
+          "enTitle": "Freelancing & Digital Marketing",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2028,
+          "tag": "دخل بالعملات الأجنبية",
+          "enTag": "Foreign Currency Income",
+          "badge": "اقتصاد رقمي وتصدير مهارات",
+          "enBadge": "Digital Economy & Remote Work",
+          "bgImage": "assets/freelance-digital-bg.jpg",
+          "accent": "#2563EB",
+          "accentLight": "#3B82F6",
+          "accentGlow": "rgba(37, 99, 235, 0.55)",
+          "synopsis": "تدريب الشباب والفتيات على العمل عن بُعد عبر الإنترنت، التسويق الرقمي وإدارة الحملات الإعلانية، صناعة المحتوى الإبداعي، وتحسين محركات البحث SEO لتمكينهم من تحقيق دخل مستقل ومستدام.",
+          "enSynopsis": "Mentoring young talents in remote digital careers: paid performance ads across Meta & Google, content copywriting, and search engine optimization (SEO) to build prosperous remote careers.",
+          "highlights": [
+            "إنشاء وإدارة الحسابات الاحترافية على منصات العمل الحر العالمية",
+            "إطلاق وإدارة الحملات الإعلانية الممولة وتحليل مؤشرات الأداء",
+            "صناعة المحتوى التسويقي الجذاب وتطبيق استراتيجيات السيو الحديثة"
+          ],
+          "enHighlights": [
+            "Building top-rated profiles on international freelancing platforms (Upwork, Freelancer)",
+            "Launching high-ROI digital ad campaigns with analytical conversion tracking",
+            "Compelling marketing copywriting and implementation of advanced SEO strategies"
+          ],
+          "iconSvg": "<path d=\"M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z\"/>"
+        },
+        {
+          "id": "women-empowerment",
+          "title": "التمكين الاقتصادي للمرأة المعيلة",
+          "enTitle": "Women Economic Empowerment",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2029,
+          "tag": "مشروعات منزلية رائدة",
+          "enTag": "Home-Based Micro Enterprises",
+          "badge": "استقلال وكرامة المرأة",
+          "enBadge": "Independence & Dignity",
+          "bgImage": "assets/women-empowerment-bg.jpg",
+          "accent": "#7209B7",
+          "accentLight": "#9D4EDD",
+          "accentGlow": "rgba(114, 9, 183, 0.55)",
+          "synopsis": "دعم وتمكين النساء المعيلات من خلال برامج: تصنيع المأكولات والحلويات المنزلية وتسويقها، الأشغال اليدوية والتطريز الراقي، تصنيع الشموع العطرية والصابون الطبيعي، وإدارة المشروعات المنزلية.",
+          "enSynopsis": "Empowering female heads of household: hygienic home food processing, couture needlework and heritage embroidery, organic artisan soaps and soy candles, and micro-business financial independence.",
+          "highlights": [
+            "سلامة وجودة تصنيع الأغذية المنزلية وفنون التغليف والتوزيع",
+            "فنون الخياطة والتطريز اليدوي والتراثي وتصميم الإكسسوارات",
+            "تصنيع الشموع والصابون الطبيعي وتأسيس علامات تجارية منزلية"
+          ],
+          "enHighlights": [
+            "Certified food hygiene, gourmet pastry production, and elegant packaging",
+            "Traditional embroidery, heritage stitchery, and boutique accessory fashioning",
+            "Cold-process natural soap and aromatic candle making with home-brand setup"
+          ],
+          "iconSvg": "<path d=\"M12 2a5 5 0 0 1 5 5c0 2.23-1.46 4.12-3.48 4.74l1.48 5.26H13v3h2v2h-2v2h-2v-2H9v-2h2v-3H9l1.48-5.26C8.46 11.12 7 9.23 7 7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3c0 1.66 1.34 3 3 3s3-1.34 3-3a3 3 0 0 0-3-3z\"/>"
+        },
+        {
+          "id": "healthcare-convoys",
+          "title": "الرعاية المجتمعية والتمريض المنزلي",
+          "enTitle": "Community Healthcare & Home Nursing",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2029,
+          "tag": "كوادر تمريضية مؤهلة",
+          "enTag": "Qualified Caregivers",
+          "badge": "رعاية الفئات الأولى",
+          "enBadge": "Compassionate Care",
+          "bgImage": "assets/healthcare-convoys-bg.jpg",
+          "accent": "#0084B0",
+          "accentLight": "#029ED6",
+          "accentGlow": "rgba(0, 132, 176, 0.55)",
+          "synopsis": "تقديم تدريبات متخصصة لإعداد كوادر مؤهلة في رعاية كبار السن، رعاية الأطفال، الإسعافات الأولية والدعم النفسي الأولي، التثقيف الصحي الأسري والتغذية السليمة، وإعداد مقدمي الرعاية المنزلية لخدمة الفئات الأولى بالرعاية.",
+          "enSynopsis": "Specialized vocational certifications for compassionate certified home caregivers: elder care protocols, pediatric support, certified emergency first aid, psychological triage, and clinical nutritional literacy.",
+          "highlights": [
+            "رعاية كبار السن والأطفال المحترفة والشاملة",
+            "الإسعافات الأولية والدعم النفسي الأولي الميداني",
+            "إعداد وتأهيل مقدمي الرعاية المنزلية والتمريض"
+          ],
+          "enHighlights": [
+            "Comprehensive geriatric companionship and pediatric care certification",
+            "Certified emergency first aid, CPR, and immediate psychological support",
+            "Professional home healthcare assistant training for vulnerable families"
+          ],
+          "iconSvg": "<path d=\"M10.5 13H8v-3h2.5V7.5h3V10H16v3h-2.5v2.5h-3V13zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z\"/>"
+        },
+        {
+          "id": "admin-office",
+          "title": "التدريبات الإدارية والرقمنة المكتبية",
+          "enTitle": "Administrative & Digital Office Training",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2029,
+          "tag": "كوادر إدارية مكتبية",
+          "enTag": "Office Administration",
+          "badge": "سوق العمل الإداري",
+          "enBadge": "Corporate Job Readiness",
+          "bgImage": "assets/education-literacy-bg.jpg",
+          "accent": "#0074A0",
+          "accentLight": "#0294D0",
+          "accentGlow": "rgba(0, 116, 160, 0.55)",
+          "synopsis": "تأهيل الشباب للالتحاق بسوق العمل الإداري عبر برامج: الأرشفة الإلكترونية وإدارة البيانات، إدارة المخازن، المحاسبة الأساسية، برنامج Excel للمبتدئين والمتقدمين، ومهارات السكرتارية وإدارة المكاتب الحديثة.",
+          "enSynopsis": "Preparing young professionals for executive office administration: digital document archiving, computerized warehouse inventory management, foundational accounting, advanced Excel modeling, and modern secretarial excellence.",
+          "highlights": [
+            "الأرشفة الإلكترونية وإدارة قواعد البيانات المكتبية",
+            "المحاسبة الأساسية وبرنامج Excel المتقدم",
+            "إدارة المخازن والمستودعات والسكرتارية التنفيذية"
+          ],
+          "enHighlights": [
+            "Cloud electronic document management, digitization, and relational databases",
+            "General ledger accounting fundamentals and advanced analytical Excel mastery",
+            "Warehouse supply chain logistics and executive secretarial management"
+          ],
+          "iconSvg": "<path d=\"M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z\"/>"
+        },
+        {
+          "id": "sme-incubator",
+          "title": "حاضنة دعم المشروعات الصغيرة والمتوسطة",
+          "enTitle": "SME Incubator & Feasibility Studies",
+          "category": "مشروعات مستقبلية",
+          "enCategory": "Future Projects",
+          "year": 2030,
+          "tag": "ريادة أعمال واستثمار",
+          "enTag": "Entrepreneurship & Investment",
+          "badge": "نمو واستدامة المشاريع",
+          "enBadge": "Venture Growth & Sustainability",
+          "bgImage": "assets/micro-enterprises-bg.jpg",
+          "accent": "#119242",
+          "accentLight": "#22B24C",
+          "accentGlow": "rgba(17, 146, 66, 0.55)",
+          "synopsis": "تمكين رواد الأعمال وأصحاب المشروعات الناشئة من تأسيس وإدارة مشروعات ناجحة عبر إعداد دراسات الجدوى، أسس التسعير وحساب التكاليف، خطط التسويق المبسطة، إدارة العملاء، وأساسيات التمويل متناهي الصغر.",
+          "enSynopsis": "Catalyzing promising entrepreneurs through professional feasibility analysis, realistic cost and margin modeling, agile marketing strategies, customer relationship management (CRM), and microfinance readiness.",
+          "highlights": [
+            "إعداد ومراجعة دراسات الجدوى الاقتصادية الشاملة",
+            "أسس التسعير المحترف وحساب هوامش الربح والتكاليف",
+            "أساسيات التمويل متناهي الصغر وإدارة المشروعات الناشئة"
+          ],
+          "enHighlights": [
+            "Drafting and validating actionable economic and market feasibility studies",
+            "Strategic unit cost calculation, profit margin formulas, and competitive pricing",
+            "Microfinance access pathways and executive mentorship for early-stage startups"
+          ],
+          "iconSvg": "<path d=\"M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z\"/>"
+        },
+        {
+          "id": "medical-support",
+          "title": "المساعدات الطبية والرعاية الصحية الشاملة",
+          "enTitle": "Healthcare Partnerships & Medical Aid",
+          "category": "مشروعات مستمرة",
+          "enCategory": "Ongoing Programs",
+          "year": 2030,
+          "tag": "صحة وحياة كريمة",
+          "enTag": "Health & Dignified Living",
+          "badge": "علاج وفحوصات دورية",
+          "enBadge": "Treatments & Health Screenings",
+          "bgImage": "assets/rural-agriculture-bg.jpg",
+          "accent": "#007CA8",
+          "accentLight": "#0299D6",
+          "accentGlow": "rgba(0, 124, 168, 0.55)",
+          "synopsis": "تقديم المساعدات الطبية الضرورية والأدوية للأفراد غير القادرين، والمساهمة في تحسين الرعاية الصحية الشاملة من خلال توفير الفحوصات والتحاليل الطبية والتعاون المشترك مع كبرى المستشفيات والمراكز العلاجية المعتمدة.",
+          "enSynopsis": "Providing subsidized medical therapies and essential medications to vulnerable individuals, orchestrating preventative health screenings, and maintaining strong collaborative ties with accredited medical institutions.",
+          "highlights": [
+            "تقديم المساعدات العلاجية وتوفير الأدوية للحالات المستحقة",
+            "تنظيم الفحوصات والتحاليل الطبية الدورية للأسر المتعففة",
+            "شراكات مستمرة مع المستشفيات والمراكز الطبية المعتمدة"
+          ],
+          "enHighlights": [
+            "Facilitating vital specialized therapies and prescription supplies for families in need",
+            "Arranging periodic free health diagnostic camps and comprehensive blood screenings",
+            "Robust strategic alliances with accredited hospitals and specialized surgical centers"
+          ],
+          "iconSvg": "<path d=\"M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z\"/>"
+        }
+      ];
+
+/* --- DOM References --- */
+      const pagesTrack = document.getElementById('pages-track');
+      const btnPrev = document.getElementById('btn-prev');
+      const btnNext = document.getElementById('btn-next');
+      const counterCurrent = document.getElementById('counter-current');
+
+      const aboutFullpage = document.getElementById('about-fullpage');
+      const goalsFullpage = document.getElementById('goals-fullpage');
+
+      const tabNavInitiatives = document.getElementById('tab-nav-initiatives');
+      const tabNavAbout = document.getElementById('tab-nav-about');
+      const tabNavGoals = document.getElementById('tab-nav-goals');
+      const btnLangSwitch = document.getElementById('btn-lang-switch');
+      const brandHomeLink = document.getElementById('brand-home-link');
+
+      /* Reduced Motion Query */
+      const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let prefersReducedMotion = reducedMotionQuery.matches;
+      reducedMotionQuery.addEventListener('change', e => {
+        prefersReducedMotion = e.matches;
+      });
+
+      /* --- Render 12 Full-Page Slider Environments --- */
+      function renderFullPages() {
+        pagesTrack.innerHTML = '';
+        const t = TRANSLATIONS[currentLang];
+        const isAr = currentLang === 'ar';
+
+        INITIATIVES.forEach((item, idx) => {
+          const page = document.createElement('article');
+          page.className = 'page-slide';
+          page.dataset.index = idx;
+          page.id = 'page-' + idx;
+
+          // Set dynamic theme color variables for custom up and down scrollbar
+          page.style.background = '#030a06';
+          page.style.background = 'var(--paper)';
+          page.style.setProperty('--page-accent', item.accent);
+          page.style.setProperty('--page-accent-light', item.accentLight || item.accent);
+          page.style.setProperty('--page-glow', item.accentGlow || 'rgba(18, 150, 67, 0.55)');
+          page.style.setProperty('--page-glow', item.accentGlow || 'rgba(20, 154, 70, 0.35)');
+
+          const title = isAr ? item.title : item.enTitle;
+          const subTitle = isAr ? item.enTitle : item.title;
+          const category = isAr ? item.category : item.enCategory;
+          const badge = isAr ? item.badge : item.enBadge;
+          const tag = isAr ? item.tag : item.enTag;
+          const synopsis = isAr ? item.synopsis : item.enSynopsis;
+          const highlights = isAr ? item.highlights : item.enHighlights;
+
+          page.innerHTML = `
+            <div class="page-content-wrapper">
+              <!-- Blurred Photo Background Layer Describing Page Content -->
+              <div class="page-bg-frame">
+                <div class="page-bg-photo" style="background-image: url('${item.bgImage}');"></div>
+                <div class="page-bg-photo-overlay"></div>
+              </div>
+
+              <!-- Unified Centered Website Page Hero -->
+              <section class="page-hero-section">
+                <div class="hero-center-container">
+                  <!-- Initiative Emblem Badge -->
+                  <div class="hero-emblem-badge" style="background: ${item.accent}22; border-color: ${item.accent}66; box-shadow: 0 10px 30px ${item.accent}33;">
+                    <svg viewBox="0 0 24 24" style="fill: ${item.accent};">${item.iconSvg}</svg>
+                  </div>
+
+                  <!-- Meta Badges (Centered Flex Row) -->
+                  <div class="meta-badges-row">
+                    <span class="badge-item highlight">${category}</span>
+                    <span class="badge-item">${badge}</span>
+                    <span class="badge-year">${item.year}</span>
+                    <span class="badge-item">${isAr ? 'إشهار 12307' : 'Reg. 12307'}</span>
+                  </div>
+
+                  <!-- Main Titles (Centered) -->
+                  <div class="hero-titles-wrap">
+                    <h1 class="hero-main-title">${title}</h1>
+                    <span class="hero-en-title">${subTitle}</span>
+                    <div class="hero-rule-divider"></div>
+                  </div>
+
+                  <!-- Comprehensive Synopsis (Centered, max-width ~800px) -->
+                  <p class="hero-synopsis-text">${synopsis}</p>
+
+                  <!-- 3 Pillars / Highlights Grid (Equal Columns Centered) -->
+                  <div class="highlights-row">
+                    ${highlights.map(h => `
+                      <div class="pillar-card">
+                        <div class="pillar-icon-line">
+                          <span>✔</span>
+                          <span>${t.pillarLabel}</span>
+                        </div>
+                        <div class="pillar-desc-text">${h}</div>
+                      </div>
+                    `).join('')}
+                  </div>
+
+                  <!-- Direct Action CTAs (Centered) -->
+                  <div class="hero-actions-group">
+                    <a href="https://www.facebook.com/RamadanCharityEG" target="_blank" rel="noopener noreferrer" class="action-cta-btn" style="background: linear-gradient(135deg, ${item.accentLight || item.accent}, ${item.accent}); box-shadow: 0 8px 24px ${item.accentGlow || 'rgba(0,0,0,0.3)'};">
+                      <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                      <span>${t.ctaFb}</span>
+                    </a>
+                    <a href="mailto:info@ramadancharity.org" class="action-secondary-btn">
+                      <span>${t.ctaContact}</span>
+                    </a>
+                    <button class="action-secondary-btn open-about-trigger">
+                      <span>${t.ctaAbout}</span>
+                    </button>
+                  </div>
+
+                  <!-- Up & Down Scroll Hint Indicator (Centered) -->
+                  <div class="scroll-down-hint">
+                    <span class="scroll-mouse-icon">
+                      <span class="scroll-mouse-wheel"></span>
+                    </span>
+                    <span class="scroll-hint-text">${t.scrollHint}</span>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Complete Website Footer on Every Page -->
+              <footer class="page-footer-container dynamic-footer">
+                ${generateFooterHtml(t, isAr)}
+              </footer>
+            </div>
+          `;
+
+          page.addEventListener('scroll', syncNavbarScrollState, { passive: true });
+          pagesTrack.appendChild(page);
+        });
+
+        // Re-bind triggers inside slides
+        document.querySelectorAll('.open-about-trigger').forEach(b => {
+          b.addEventListener('click', showAboutPage);
+        });
+        document.querySelectorAll('.open-goals-trigger').forEach(b => {
+          b.addEventListener('click', showGoalsPage);
+        });
+      }
+
+      /* Generate Footer HTML with full i18n */
+      function generateFooterHtml(t, isAr) {
+        return `
+          <div class="footer-inner-grid">
+            <div class="footer-col">
+              <div class="footer-logo-row">
+                <img src="assets/logo.png" alt="شعار المؤسسة" class="footer-logo-img">
+                <span class="footer-inst-name">${t.brandName}</span>
+              </div>
+              <p class="footer-desc">${t.footerDesc}</p>
+            </div>
+
+            <div class="footer-col">
+              <div class="footer-col-title">${t.footerColQuick}</div>
+              <ul class="footer-links-list">
+                <li><button class="open-about-trigger">${t.footerLinkAbout}</button></li>
+                <li><button class="open-goals-trigger">${t.footerLinkGoals}</button></li>
+                <li><a href="https://www.facebook.com/RamadanCharityEG" target="_blank" rel="noopener noreferrer">${t.footerLinkFb}</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <div class="footer-col-title">${t.footerColContact}</div>
+              <ul class="footer-links-list">
+                <li><a href="mailto:info@ramadancharity.org">${t.footerEmail}</a></li>
+                <li><span>${t.footerReg}</span></li>
+                <li><span>${t.footerSlogan}</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom-bar">
+            <div>${t.footerCopyright}</div>
+            <div class="footer-bottom-links">
+              <a href="https://www.facebook.com/RamadanCharityEG" target="_blank" rel="noopener noreferrer">Facebook: RamadanCharityEG</a>
+              <span>•</span>
+              <a href="mailto:info@ramadancharity.org">info@ramadancharity.org</a>
+            </div>
+          </div>
+        `;
+      }
+
+      /* Render the 9 Strategic Goals Grid inside Goals Full-Page */
+      function renderGoalsGrid() {
+        const container = document.getElementById('goals-cards-container');
+        if (!container) return;
+        const isAr = currentLang === 'ar';
+
+        container.innerHTML = STRATEGIC_GOALS.map(g => `
+          <div class="goal-card-item">
+            <div class="goal-number-badge">${g.num}</div>
+            <div class="goal-card-body">
+              <div class="goal-card-title">${isAr ? g.arTitle : g.enTitle}</div>
+              <div class="goal-card-desc">${isAr ? g.arDesc : g.enDesc}</div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      /* Update all UI text labels across the site for language switch */
+      function updateAllLanguageTexts() {
+        const t = TRANSLATIONS[currentLang];
+        const isAr = currentLang === 'ar';
+
+        document.documentElement.lang = currentLang;
+        document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+
+        // Header brand & tabs
+        document.getElementById('i18n-brand-name').textContent = t.brandName;
+        document.getElementById('i18n-brand-tagline').textContent = t.brandTagline;
+        document.getElementById('i18n-reg-badge').textContent = t.regBadge;
+        document.getElementById('i18n-initiative-label').textContent = t.initiativeLabel;
+        document.getElementById('i18n-nav-initiatives').textContent = t.navInitiatives;
+        document.getElementById('i18n-nav-about').textContent = t.navAbout;
+        document.getElementById('i18n-nav-goals').textContent = t.navGoals;
+        document.getElementById('i18n-nav-facebook').textContent = t.navFacebook;
+        document.getElementById('lang-switch-label').textContent = t.langSwitchLabel;
+
+        // Arrows titles
+        btnNext.title = t.nextArrowTitle;
+        btnNext.setAttribute('aria-label', t.nextArrowTitle);
+        btnPrev.title = t.prevArrowTitle;
+        btnPrev.setAttribute('aria-label', t.prevArrowTitle);
+
+        // About Us Full-Page texts
+        document.getElementById('i18n-about-back').textContent = t.aboutBack;
+        document.getElementById('i18n-about-badge').textContent = t.aboutBadge;
+        document.getElementById('i18n-about-reg-badge').textContent = t.aboutRegBadge;
+        document.getElementById('i18n-about-title').textContent = t.aboutTitle;
+        document.getElementById('i18n-about-subtitle').textContent = t.aboutSubtitle;
+        document.getElementById('i18n-about-who-title').textContent = t.aboutWhoTitle;
+        document.getElementById('i18n-about-who-p').textContent = t.aboutWhoP;
+        document.getElementById('i18n-about-mission-title').textContent = t.aboutMissionTitle;
+        document.getElementById('i18n-about-mission-p').textContent = t.aboutMissionP;
+        document.getElementById('i18n-val1-title').textContent = t.val1Title;
+        document.getElementById('i18n-val1-p').textContent = t.val1P;
+        document.getElementById('i18n-val2-title').textContent = t.val2Title;
+        document.getElementById('i18n-val2-p').textContent = t.val2P;
+        document.getElementById('i18n-val3-title').textContent = t.val3Title;
+        document.getElementById('i18n-val3-p').textContent = t.val3P;
+        document.getElementById('i18n-val4-title').textContent = t.val4Title;
+        document.getElementById('i18n-val4-p').textContent = t.val4P;
+
+        // Vision & Goals Full-Page texts
+        document.getElementById('i18n-goals-back').textContent = t.goalsBack;
+        document.getElementById('i18n-goals-badge').textContent = t.goalsBadge;
+        document.getElementById('i18n-goals-title').textContent = t.goalsTitle;
+        document.getElementById('i18n-goals-subtitle').textContent = t.goalsSubtitle;
+        document.getElementById('i18n-vision-box-title').textContent = t.visionBoxTitle;
+        document.getElementById('i18n-vision-box-p').textContent = t.visionBoxP;
+
+        // Update full-page footers
+        document.querySelectorAll('.fullpage-view .dynamic-footer').forEach(footer => {
+          footer.innerHTML = generateFooterHtml(t, isAr);
+        });
+
+        // Re-render the 9 Goals
+        renderGoalsGrid();
+
+        // Re-render 12 Full-Page slides
+        renderFullPages();
+
+        // Re-cache slide elements
+        pageElements = Array.from(document.querySelectorAll('.page-slide'));
+        updateCounter();
+      }
+
+      /* Language Toggle Handler */
+      btnLangSwitch.addEventListener('click', () => {
+        currentLang = (currentLang === 'ar') ? 'en' : 'ar';
+        updateAllLanguageTexts();
+      });
+
+      /* Navbar Scroll Frosted State Management */
+      const topBarEl = document.querySelector('.top-bar');
+      function syncNavbarScrollState() {
+        if (!topBarEl) return;
+        let activeScroller = null;
+        if (aboutFullpage.classList.contains('active')) {
+          activeScroller = aboutFullpage;
+        } else if (goalsFullpage.classList.contains('active')) {
+          activeScroller = goalsFullpage;
+        } else {
+          activeScroller = pageElements[currentIndex];
+        }
+        if (activeScroller && activeScroller.scrollTop > 20) {
+          topBarEl.classList.add('scrolled');
+        } else {
+          topBarEl.classList.remove('scrolled');
+        }
+      }
+
+      if (aboutFullpage) aboutFullpage.addEventListener('scroll', syncNavbarScrollState, { passive: true });
+      if (goalsFullpage) goalsFullpage.addEventListener('scroll', syncNavbarScrollState, { passive: true });
+
+      /* Navigation Views Management */
+      function setNavActiveTab(activeId) {
+        tabNavInitiatives.classList.remove('active');
+        tabNavAbout.classList.remove('active');
+        tabNavGoals.classList.remove('active');
+
+        if (activeId === 'initiatives') tabNavInitiatives.classList.add('active');
+        if (activeId === 'about') tabNavAbout.classList.add('active');
+        if (activeId === 'goals') tabNavGoals.classList.add('active');
+      }
+
+      function showSliderView() {
+        aboutFullpage.classList.remove('active');
+        goalsFullpage.classList.remove('active');
+        setNavActiveTab('initiatives');
+        syncNavbarScrollState();
+      }
+
+      function showAboutPage() {
+        goalsFullpage.classList.remove('active');
+        aboutFullpage.classList.add('active');
+        aboutFullpage.scrollTop = 0;
+        setNavActiveTab('about');
+        syncNavbarScrollState();
+      }
+
+      function showGoalsPage() {
+        aboutFullpage.classList.remove('active');
+        goalsFullpage.classList.add('active');
+        goalsFullpage.scrollTop = 0;
+        setNavActiveTab('goals');
+        syncNavbarScrollState();
+      }
+
+      // Tab Nav Click Handlers
+      const topBarNav = document.getElementById('top-bar-nav');
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+
+      if (mobileMenuBtn && topBarNav) {
+        mobileMenuBtn.addEventListener('click', () => {
+          topBarNav.classList.toggle('mobile-open');
+        });
+      }
+
+      function closeMobileNav() {
+        if (topBarNav) topBarNav.classList.remove('mobile-open');
+      }
+
+      tabNavInitiatives.addEventListener('click', () => {
+        closeMobileNav();
+        showSliderView();
+      });
+      tabNavAbout.addEventListener('click', () => {
+        closeMobileNav();
+        showAboutPage();
+      });
+      tabNavGoals.addEventListener('click', () => {
+        closeMobileNav();
+        showGoalsPage();
+      });
+      brandHomeLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeMobileNav();
+        showSliderView();
+      });
+
+      // Back Buttons inside Full-Page views
+      document.querySelectorAll('.back-to-slider-btn').forEach(btn => {
+        btn.addEventListener('click', showSliderView);
+      });
+
+      /* --- Cinematic 3D State & Simulation --- */
+      const TOTAL_PAGES = 12;
+      let currentIndex = 0; // Integer target index (0 to 11)
+      let currentPos = 0;   // Interpolated float position for 60/120 FPS 3D movement
+      let pageElements = [];
+
+      function updateCounter() {
+        if (counterCurrent) {
+          counterCurrent.textContent = String(currentIndex + 1).padStart(2, '0');
+        }
+      }
+
+      /* Navigation Methods */
+      function nextPage() {
+        if (aboutFullpage.classList.contains('active') || goalsFullpage.classList.contains('active')) return;
+        if (currentIndex < TOTAL_PAGES - 1) {
+          currentIndex++;
+          updateCounter();
+          if (pageElements[currentIndex]) {
+            pageElements[currentIndex].scrollTop = 0;
+          }
+          syncNavbarScrollState();
+        }
+      }
+
+      function prevPage() {
+        if (aboutFullpage.classList.contains('active') || goalsFullpage.classList.contains('active')) return;
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCounter();
+          if (pageElements[currentIndex]) {
+            pageElements[currentIndex].scrollTop = 0;
+          }
+          syncNavbarScrollState();
+        }
+      }
+
+      /* Directional Arrows */
+      btnNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nextPage();
+      });
+
+      btnPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        prevPage();
+      });
+
+      /* Keyboard Navigation */
+      window.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          if (aboutFullpage.classList.contains('active') || goalsFullpage.classList.contains('active')) {
+            showSliderView();
+            return;
+          }
+        }
+        if (aboutFullpage.classList.contains('active') || goalsFullpage.classList.contains('active')) return;
+
+        if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+          nextPage();
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+          prevPage();
+        } else if (e.key === 'Home') {
+          currentIndex = 0;
+          updateCounter();
+          if (pageElements[currentIndex]) pageElements[currentIndex].scrollTop = 0;
+          syncNavbarScrollState();
+        } else if (e.key === 'End') {
+          currentIndex = TOTAL_PAGES - 1;
+          updateCounter();
+          if (pageElements[currentIndex]) pageElements[currentIndex].scrollTop = 0;
+          syncNavbarScrollState();
+        }
+      });
+
+      /* Natural Vertical Scrolling vs Horizontal Page Switching */
+      let wheelLocked = false;
+      let wheelAccumX = 0;
+      let wheelResetTimer = null;
+      let wheelCooldownTimer = null;
+
+      window.addEventListener('wheel', e => {
+        if (aboutFullpage.classList.contains('active') || goalsFullpage.classList.contains('active')) return;
+
+        // 1. Horizontal trackpad swipe or Shift+Wheel
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+          clearTimeout(wheelResetTimer);
+          wheelResetTimer = setTimeout(() => {
+            wheelAccumX = 0;
+            wheelLocked = false;
+          }, 200);
+
+          if (wheelLocked) return;
+          wheelAccumX += e.deltaX;
+
+          if (Math.abs(wheelAccumX) >= 30) {
+            if (wheelAccumX > 0) {
+              nextPage();
+            } else {
+              prevPage();
+            }
+            wheelLocked = true;
+            wheelAccumX = 0;
+
+            clearTimeout(wheelCooldownTimer);
+            wheelCooldownTimer = setTimeout(() => {
+              wheelLocked = false;
+            }, 500);
+          }
+          return;
+        }
+
+        // 2. Vertical Scrolling (Up and Down):
+        // Only scroll up and down the page content. NEVER move to next or previous page!
+        const activePage = pageElements[currentIndex];
+        if (e.target.closest('.top-bar, .cinematic-arrow-btn') && activePage) {
+          activePage.scrollTop += e.deltaY;
+        }
+      }, { passive: true });
+
+      /* Pointer Drag & Swipe (Separating Vertical Scroll from Horizontal Drag) */
+      let isDragging = false;
+      let dragStartX = 0;
+      let dragStartY = 0;
+      let dragStartTime = 0;
+      let dragDetermined = false;
+      let isHorizontalSwipe = false;
+      let dragDeltaNormalized = 0;
+
+      window.addEventListener('pointerdown', e => {
+        if (e.target.closest('a, button, input, textarea, select, .cinematic-arrow-btn, .fullpage-view')) {
+          return;
+        }
+        if (aboutFullpage.classList.contains('active') || goalsFullpage.classList.contains('active')) return;
+
+        isDragging = true;
+        dragStartX = e.clientX;
+        dragStartY = e.clientY;
+        dragStartTime = performance.now();
+        dragDetermined = false;
+        isHorizontalSwipe = false;
+        dragDeltaNormalized = 0;
+      });
+
+      window.addEventListener('pointermove', e => {
+        if (!isDragging) return;
+
+        const dx = e.clientX - dragStartX;
+        const dy = e.clientY - dragStartY;
+
+        if (!dragDetermined && (Math.abs(dx) > 10 || Math.abs(dy) > 10)) {
+          dragDetermined = true;
+          if (Math.abs(dx) > Math.abs(dy)) {
+            isHorizontalSwipe = true;
+            document.body.classList.add('is-dragging');
+          } else {
+            isHorizontalSwipe = false;
+          }
+        }
+
+        if (isHorizontalSwipe) {
+          dragDeltaNormalized = -dx / window.innerWidth;
+        }
+      });
+
+      function handleDragRelease(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        document.body.classList.remove('is-dragging');
+
+        if (isHorizontalSwipe) {
+          const totalDx = e.clientX - dragStartX;
+          const elapsed = Math.max(1, performance.now() - dragStartTime);
+          const velocity = Math.abs(totalDx) / elapsed;
+
+          if (Math.abs(totalDx) > 40 || velocity > 0.28) {
+            if (totalDx < 0) {
+              nextPage();
+            } else {
+              prevPage();
+            }
+          }
+        }
+        dragDeltaNormalized = 0;
+        isHorizontalSwipe = false;
+      }
+
+      window.addEventListener('pointerup', handleDragRelease);
+      window.addEventListener('pointercancel', handleDragRelease);
+
+      /* --- Cinematic 3D Horizontal Slider Loop (Single rAF) --- */
+      let lastTime = performance.now();
+
+      function tick(now) {
+        const rawDt = (now - lastTime) / 1000;
+        lastTime = now;
+        const dt = Math.min(0.05, rawDt);
+
+        const dragResistance = (currentIndex === 0 && dragDeltaNormalized < 0) || (currentIndex === TOTAL_PAGES - 1 && dragDeltaNormalized > 0) ? 0.25 : 1;
+        const liveDragOffset = (isDragging && isHorizontalSwipe) ? (dragDeltaNormalized * dragResistance) : 0;
+        const targetPos = currentIndex + liveDragOffset;
+
+        if (prefersReducedMotion) {
+          currentPos = targetPos;
+        } else {
+          const kSpring = 6.2;
+          currentPos += (targetPos - currentPos) * (1 - Math.exp(-kSpring * dt));
+        }
+
+        const W = window.innerWidth;
+
+        for (let i = 0; i < TOTAL_PAGES; i++) {
+          const page = pageElements[i];
+          if (!page) continue;
+          const offset = i - currentPos;
+
+          if (Math.abs(offset) > 1.25) {
+            page.style.display = 'none';
+            continue;
+          }
+          page.style.display = 'block';
+
+          const transX = offset * W;
+          const transZ = -Math.min(1, Math.abs(offset)) * 180;
+          const rotY = -Math.sign(offset) * Math.min(1, Math.abs(offset)) * 7.5;
+          const opacity = Math.max(0, 1 - Math.abs(offset) * 0.75);
+
+          page.style.transform = `translate3d(${transX.toFixed(2)}px, 0, ${transZ.toFixed(2)}px) rotateY(${rotY.toFixed(2)}deg)`;
+          page.style.opacity = opacity.toFixed(3);
+          page.style.pointerEvents = Math.abs(offset) < 0.35 ? 'auto' : 'none';
+        }
+
+        requestAnimationFrame(tick);
+      }
+
+      // Initialize Everything
+      updateAllLanguageTexts();
+      requestAnimationFrame(tick);
+    })();
+  </script>
+</body>
+</html>
